@@ -6,7 +6,9 @@ namespace MedienkurseTestCLI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Katze katze = new Katze("Klein");
+            katze.Greet();
+            Console.WriteLine(katze.Name);
         }
     }
 }
