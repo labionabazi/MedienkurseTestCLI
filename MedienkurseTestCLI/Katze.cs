@@ -6,13 +6,9 @@ namespace MedienkurseTestCLI
 {
     class Katze : Tier
     {
-        public Katze(string name) : base(name)
+        public Katze(string name, string Spezielles, string Greet, string Fellfarbe) : base(name, Spezielles, Greet, Fellfarbe)
         {
         }
-
-        public override void Greet()
-        {
-            Console.WriteLine("Hallo ich bin eine Katze");
-        }
+        
     }
 }

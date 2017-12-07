@@ -4,13 +4,20 @@ using System.Text;
 
 namespace MedienkurseTestCLI
 {
-    abstract class Tier : ITier
-    {
-        public Tier(string name)
+    class Tier : ITier
+    {   
+        public Tier(string name, string Spezielles, string Greet, string Fellfarbe)
         {
-            this.Name = name;
+            Console.WriteLine("Hallo ich bin ein " + Greet);
+            Console.WriteLine("Mein Name ist " + name);
+            Console.WriteLine("Das Spezielle an mir ist " + Spezielles);
+            Console.WriteLine("und ich habe ein " + Fellfarbe + " Fell");
         }
-        public string Name { get; set; }
-        public abstract void Greet();
+        public string name { get; set; }
+        public string Spezielles { get; set; }
+        public string Greet { get; set; }
+        public string Fellfarbe { get; set; }
+        
+
     }
 }

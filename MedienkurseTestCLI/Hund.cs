@@ -4,7 +4,11 @@ using System.Text;
 
 namespace MedienkurseTestCLI
 {
-    class Hund
+    class Hund : Tier
     {
+        public Hund(string name, string Spezielles, string Greet, string Fellfarbe) : base(name, Spezielles, Greet, Fellfarbe)
+        {
+
+        }
     }
 }

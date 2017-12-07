@@ -6,6 +6,11 @@ namespace MedienkurseTestCLI
 {
     interface ITier
     {
-        void Greet();
+        string Greet { get; set; }
+        string Fellfarbe { get; set; }
+        string name { get; set; }
+        string Spezielles { get; set; }
+
+
     }
 }
