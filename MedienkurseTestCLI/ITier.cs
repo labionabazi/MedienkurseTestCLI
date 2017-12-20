@@ -9,7 +9,9 @@ namespace MedienkurseTestCLI
         string Greet { get; set; }
         string Fellfarbe { get; set; }
         string name { get; set; }
-        string Spezielles { get; set; }
+        StatusEnum Status { get; set; }
+        void Sound();
+        void Essen();
 
 
     }
